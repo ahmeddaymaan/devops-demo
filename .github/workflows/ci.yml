@@ -27,10 +27,10 @@ jobs:
           pip install flask
 
       - name: Check Python syntax
-       run: |
-         python -m py_compile app.py
+        run: |
+          python -m py_compile app.py
 
-     - name: Run tests
-       run: |
-         pip install pytest
-    pytest
+      - name: Run tests
+        run: |
+          pip install pytest
+          pytest
